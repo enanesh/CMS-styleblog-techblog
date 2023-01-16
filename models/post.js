@@ -16,7 +16,7 @@ Post.init(
             allowNull: false
         },
         content: {
-            type: DataTypes.TEXT,
+            type: DataTypes.TEXT('medium'),// I set it to medium because it seemed more convenient
             allowNull: false
         },
         user_id: {
