@@ -14,11 +14,9 @@ Comments.init(
         },
         
         comment_text: {
-            type: DataTypes.TEXT,
+            type: DataTypes.TEXT('medium'),
             allowNull: false,
-            validate: {
-                len: [10],
-            }
+           
         },
 
         user_id: {
@@ -29,7 +27,16 @@ Comments.init(
                 key: 'id'
             }
         },
-        //add post id need to create post model firts
+         
+        post_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            referemces: {
+                model: 'posts',
+                key:'id'
+            }
+            
+        }
      
 
 
