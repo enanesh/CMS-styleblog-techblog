@@ -20,8 +20,43 @@ router.get('/', async (req, res) => {
         console.log(req.session)
         // Pass serialized data and session flag into template
         res.render('homepage', {
-           posts,
-            logged_in: req.session.logged_in 
+            posts,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get('/dashboard', async (req, res) => {
+    try {
+        if (!req.session.logged_in) {
+            console.log("user is logged in redirected to home")
+            res.redirect('/login');
+            return;
+        }
+        // Get all projects and JOIN with user data
+        const postData = await Post.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+            ],
+            where: {
+                user_id: req.session.user_id
+            }
+        });
+
+        // Serialize data so the template can read it
+        const posts = postData.map((post) => post.get({ plain: true }));
+
+        console.log(req.session)
+        // Pass serialized data and session flag into template
+        res.render('homepage', {
+            posts,
+            logged_in: req.session.logged_in
         });
     } catch (err) {
         console.log(err);
