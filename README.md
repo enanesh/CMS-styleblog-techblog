@@ -8,7 +8,7 @@
 This repo houses the assets used to build the TechBro Tears Blog, this app was inspired by the need of create a developer community to share their new applications and their debuggin solutions to existing code bases.In this Blog you'll can writte about technical concepts, recent advancements and new technologies.
 
 
-Link to Devloped app on Heroku:
+Link to Devloped app on Heroku: https://cms-styleblog-mvc.herokuapp.com/
 
 
 #### User story:
