@@ -1,15 +1,9 @@
 {{#each posts as |post| }}
 
+<div class=" pt-4 dark:bg-purple-00 dark:text-gray-400">
+    <div class="container  bg-purple-100 max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-purple-900">
 
-{{!-- <div>
-    <h1>{{post.title}}</h1>
-    <p>{{post.content}} </p>
-    <p>{{post.user.username}}</p>
-    <p>{{post.createdAt}}</p>
-</div> --}}
-
-<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400">
-    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        
         <div class="flex items-center justify-between">
             <a rel="href" href="/post/{{post.id}}"
                 class="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{{format_date post.createdAt}}   {{format_time post.createdAt}}</a>
@@ -18,6 +12,8 @@
             <a rel="href" href="/post/{{post.id}}" class="text-2xl font-bold hover:underline">{{post.title}}</a>
             <p class="mt-2">{{post.content}}</p>
         </div>
+
+
         <div class="flex items-center justify-between mt-4">
             <a rel="href" href="/post/{{post.id}}" class="hover:underline dark:text-violet-400"></a>
             <div>

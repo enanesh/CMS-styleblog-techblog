@@ -21,21 +21,62 @@
         </div>
     </div>
 
+   
+
+
     {{#each post.comments as |comment| }}
-    <div>Comment: {{comment.comment_text}}</div>
+    {{!-- <div>Comment: {{comment.comment_text}}</div>
+
     <div>User: {{comment.user.username}}</div>
-    <div>Created at: {{format_date comment.createdAt}}</div>
+    <div>Created at: {{format_date comment.createdAt}}</div> --}}
+
+
+
+<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400" id="post1">
+    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        <div class="flex items-center justify-between">
+            <a rel="href" href="/post/{{comment.id}}"
+                class="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{{format_date comment.createdAt}}
+                {{format_time comment.createdAt}}</a>
+        </div>
+        <div class="mt-3">
+            <a rel="href" href="/post/{{post.id}}" class="text-2xl font-bold hover:underline">{{post.title}}</a>
+            <p class="mt-2">{{comment.comment_text}}</p>
+        </div>
+        <div class="flex items-center justify-between mt-4">
+            <a rel="href" href="/post/{{post.id}}" class="hover:underline dark:text-violet-400"></a>
+            <div>
+                <a rel="href" href="/post/{{post.id}}" class="flex items-center">
+                    <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar"
+                        class="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500">
+                    <span class="hover:underline dark:text-gray-400">{{comment.user.username}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
     
     {{/each}}
 
 
+  
+
+
+<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400">
+    
+    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+
+<button id="show-comment-button" class="bg-gradient-to-r from-cyan-500 to-blue-500 ">Add comment</button>
 
 
 
 
-
-    <button id="show-comment-button">Add comment</button>
-    <form id="newcomment-form" class="form newcomment-form'" style="visibility: hidden;">
+    <form id="newcomment-form" class="form newcomment-form pt-9" style="visibility: hidden;">
     
     
         <div class="mb-6">
@@ -47,12 +88,15 @@
         </div>
     
         <div class="newcomment-form ">
-            <button class="" type="submit">submit</button>
+            <button class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="submit">submit</button>
         </div>
         </div>
     
     
     </form>
+</div>
+
+</div>
 </div>
 
 <script src="/js/comment.js"></script>
