@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    
+
     {{#each post.comments as |comment| }}
     <div>Comment: {{comment.comment_text}}</div>
     <div>User: {{comment.user.username}}</div>
@@ -34,8 +34,8 @@
 
 
 
-    <button>Add comment</button>
-    <form id="newcomment-form" class="form newcomment-form'">
+    <button id="show-comment-button">Add comment</button>
+    <form id="newcomment-form" class="form newcomment-form'" style="visibility: hidden;">
     
     
         <div class="mb-6">

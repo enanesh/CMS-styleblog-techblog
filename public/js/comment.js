@@ -23,13 +23,17 @@ const comment = async (event) => {
 };
 
 
-const showForm = async (event) => {
-    document.querySelector('#newcomment-form')
+const showCommentForm = async (event) => {
+    document.querySelector('#newcomment-form').style.visibility = "visible"
 }
 
 
 document
     .querySelector('#newcomment-form')
     .addEventListener('submit', comment);
+
+document
+    .querySelector('#show-comment-button')
+    .addEventListener('click', showCommentForm);
 
 
