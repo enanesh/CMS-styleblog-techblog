@@ -65,27 +65,39 @@ router.get('/dashboard', async (req, res) => {
 });
 
 
-// router.get('/post/:id', async (req, res) => {
-//     try {
-//         const postData = await Post.findByPk(req.params.id, {
-//             include: [
-//                 {
-//                     model: User,
-//                     attributes: ['name'],
-//                 },
-//             ],
-//         });
+router.get('/post/:id', async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+                {
+                    model: Comment,
+                    include: [
+                        {
+                            model: User,
+                            attributes: ['username']
+                        }
+                    ]
+                }
+            ],
+        });
 
-//         const post = postData.get({ plain: true });
+        const post = postData.get({ plain: true });
 
-//         res.render('project', {
-//             ...project,
-//             logged_in: req.session.logged_in
-//         });
-//     } catch (err) {
-//         res.status(500).json(err);
-//     }
-// });
+        console.log(post);
+
+        res.render('post', {
+            post: post,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
 
 
 router.get('/login', (req, res) => {

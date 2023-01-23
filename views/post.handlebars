@@ -1,0 +1,58 @@
+<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400">
+    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        <div class="flex items-center justify-between">
+            <a rel="href" href="/post/{{post.id}}"
+                class="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{{format_date post.createdAt}}
+                {{format_time post.createdAt}}</a>
+        </div>
+        <div class="mt-3">
+            <a rel="href" href="/post/{{post.id}}" class="text-2xl font-bold hover:underline">{{post.title}}</a>
+            <p class="mt-2">{{post.content}}</p>
+        </div>
+        <div class="flex items-center justify-between mt-4">
+            <a rel="href" href="/post/{{post.id}}" class="hover:underline dark:text-violet-400"></a>
+            <div>
+                <a rel="href" href="/post/{{post.id}}" class="flex items-center">
+                    <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar"
+                        class="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500">
+                    <span class="hover:underline dark:text-gray-400">{{post.user.username}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    {{#each post.comments as |comment| }}
+    <div>Comment: {{comment.comment_text}}</div>
+    <div>User: {{comment.user.username}}</div>
+    <div>Created at: {{format_date comment.createdAt}}</div>
+    
+    {{/each}}
+
+
+
+
+
+
+
+    <button>Add comment</button>
+    <form id="newcomment-form" class="form newcomment-form'">
+    
+    
+        <div class="mb-6">
+            <label for="comment-input"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comment</label>
+            <input type="text" id="comment-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <input type="text" id="postId-input" value="{{post.id}}" class="invisible" >
+        </div>
+    
+        <div class="newcomment-form ">
+            <button class="" type="submit">submit</button>
+        </div>
+        </div>
+    
+    
+    </form>
+</div>
+
+<script src="/js/comment.js"></script>
