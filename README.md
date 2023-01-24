@@ -21,7 +21,7 @@ As a Developer who writes about tech I want a CMS-style blog site so that I can 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Video](#video)
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [Technology Used](#technology-used)
 - [License](#license)
@@ -68,16 +68,31 @@ To seed the database go to the path /seed and run the command `node index.js`.
 
 ### Step 6:
 
-Finally to run the server go to the path /Develop and then run the commant `node server.js` in the terminal.
+Finally to run the server go to the path /Develop/seeds and then run the commant `node seed.js` in the terminal.
+
+
+## Screenshots
+
+
+### Homepage view
+
+<img width="1381" alt="Screenshot 2023-01-24 at 12 47 54 AM" src="https://user-images.githubusercontent.com/111031708/214248571-118fd86a-dc68-44d9-af9c-50a2c58b098c.png">
 
 
 
+### Login view
+
+<img width="1347" alt="Screenshot 2023-01-24 at 12 48 16 AM" src="https://user-images.githubusercontent.com/111031708/214248732-4510f2af-d259-457c-ac59-de2b4b51e709.png">
 
 
+### New post 
 
 
+<img width="1382" alt="Screenshot 2023-01-24 at 12 48 52 AM" src="https://user-images.githubusercontent.com/111031708/214249032-45489bf8-a03e-48a0-8179-4a6f7f051f33.png">
 
+### New comment 
 
+<img width="1381" alt="Screenshot 2023-01-24 at 12 49 28 AM" src="https://user-images.githubusercontent.com/111031708/214249130-ab852401-2c58-46d5-91cf-0ed12cbfe0cd.png">
 
 
 
