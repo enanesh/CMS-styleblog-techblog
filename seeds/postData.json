@@ -1,14 +1,14 @@
 [
     {
-    "title" : "The best Twitter post",
-    "content" : "ba da ba ba ba really didn’t have to go that hard",
-    "user_id" : "2"
+    "title" : "This is my Tesla post",
+    "content" : "Tesla stock price is too high imo",
+    "user_id" : "1"
 
     },
         {
-    "title" : "The best facebook post",
-    "content" : "ba da ba ba ba really didn’t have to go that hard",
-    "user_id" : "1"
+    "title" : "Is Bitcoion real?",
+    "content" : "Bitcoin is an open source censorship-resistant peer-to-peer immutable network. Trackable digital gold. Don't trust; verify. Not your keys; not your coins.",
+    "user_id" : "2"
 
     }
 ]
