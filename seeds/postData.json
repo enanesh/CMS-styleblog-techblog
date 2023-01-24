@@ -1,11 +1,11 @@
 [
     {
-    "title" : "This is my Tesla post",
+    "title" : "Elon's tweets",
     "content" : "Tesla stock price is too high imo",
     "user_id" : "1"
 
     },
-        {
+    {
     "title" : "Is Bitcoion real?",
     "content" : "Bitcoin is an open source censorship-resistant peer-to-peer immutable network. Trackable digital gold. Don't trust; verify. Not your keys; not your coins.",
     "user_id" : "2"
