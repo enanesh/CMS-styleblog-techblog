@@ -90,14 +90,16 @@ Finally to run the server go to the path /Develop/seeds and then run the commant
 
 <img width="1382" alt="Screenshot 2023-01-24 at 12 48 52 AM" src="https://user-images.githubusercontent.com/111031708/214249032-45489bf8-a03e-48a0-8179-4a6f7f051f33.png">
 
-### New comment 
+### Dashboard
 
 <img width="1381" alt="Screenshot 2023-01-24 at 12 49 28 AM" src="https://user-images.githubusercontent.com/111031708/214249130-ab852401-2c58-46d5-91cf-0ed12cbfe0cd.png">
 
 
+### Comments
 
 
 
+![Screenshot 2023-01-24 at 12 58 31 AM](https://user-images.githubusercontent.com/111031708/214250351-f8ef70e3-b1fd-49e1-9fdf-527a33c7f784.png)
 
 
 
