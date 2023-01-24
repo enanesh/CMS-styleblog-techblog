@@ -1,5 +1,5 @@
 <div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400">
-    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+    <div class="container max-w-4xl bg-purple-100  px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
         <div class="flex items-center justify-between">
             <a rel="href" href="/post/{{post.id}}"
                 class="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{{format_date post.createdAt}}
@@ -24,16 +24,14 @@
    
 
 
+
+<!-- CREATES THE COMMENT TO POSTS!-->
+
     {{#each post.comments as |comment| }}
-    {{!-- <div>Comment: {{comment.comment_text}}</div>
-
-    <div>User: {{comment.user.username}}</div>
-    <div>Created at: {{format_date comment.createdAt}}</div> --}}
 
 
-
-<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400" id="post1">
-    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+<div class="padding-top:15px pt-12 dark:bg-gray-800 dark:text-gray-400" id="post1">
+    <div class="container max-w-4xl  px-10 bg-green-100  py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
         <div class="flex items-center justify-between">
             <a rel="href" href="/post/{{comment.id}}"
                 class="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{{format_date comment.createdAt}}
@@ -58,45 +56,52 @@
 
 
 
-
-
-    
     {{/each}}
 
 
+
+
   
+  <!-- FORM TO CREATE A NEW COMMENT!-->
 
 
-<div class="padding-top:15px dark:bg-gray-800 dark:text-gray-400">
+
+<div class="padding-top:15px ">
     
-    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+    <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg ">
 
-<button id="show-comment-button" class="bg-gradient-to-r from-cyan-500 to-blue-500 ">Add comment</button>
-
-
+        <button id="show-comment-button" class="text-white text-xl bg-green-400 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  ">Add comment</button>
 
 
-    <form id="newcomment-form" class="form newcomment-form pt-9" style="visibility: hidden;">
+        
+    <div>
+   
+</div>
+
+
+    <form id="newcomment-form" class="form newcomment-form pt-9 " style="visibility: hidden;">
     
     
         <div class="mb-6">
             <label for="comment-input"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comment</label>
+                class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Writte a new comment :</label>
             <input type="text" id="comment-input"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
                 <input type="text" id="postId-input" value="{{post.id}}" class="invisible" >
         </div>
     
         <div class="newcomment-form ">
-            <button class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" type="submit">submit</button>
+            <button class="text-white text-xl bg-purple-400 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " type="submit">submit</button>
         </div>
-        </div>
-    
-    
-    </form>
-</div>
 
-</div>
-</div>
+
+
+    
+
+
+    </form>
+
+  
+
 
 <script src="/js/comment.js"></script>
