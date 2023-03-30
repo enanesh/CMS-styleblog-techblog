@@ -1,13 +1,13 @@
 [
     {
-    "title" : "Elon's tweets",
-    "content" : "Tesla stock price is too high imo",
+    "title" : "Ada's quotes",
+    "content" : "The more I study, the more insatiable do I feel my genius for it to be.",
     "user_id" : "1"
 
     },
     {
-    "title" : "Is Bitcoion real?",
-    "content" : "Bitcoin is an open source censorship-resistant peer-to-peer immutable network. Trackable digital gold. Don't trust; verify. Not your keys; not your coins.",
+    "title" : "My Favorite quote is",
+    "content" : "“Do the best you can until you know better. Then when you know better, do better.” — Maya Angelou",
     "user_id" : "2"
 
     }
