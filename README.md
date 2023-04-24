@@ -76,30 +76,20 @@ Finally to run the server go to the path /Develop/seeds and then run the commant
 
 ### Homepage view
 
-<img width="1381" alt="Screenshot 2023-01-24 at 12 47 54 AM" src="https://user-images.githubusercontent.com/111031708/214248571-118fd86a-dc68-44d9-af9c-50a2c58b098c.png">
+
+![Screenshot 2023-04-23 at 10 25 55 PM](https://user-images.githubusercontent.com/111031708/233907138-136bf98c-0c5b-424b-8fa7-3c76c137d99f.png)
 
 
-
-### Login view
-
-<img width="1347" alt="Screenshot 2023-01-24 at 12 48 16 AM" src="https://user-images.githubusercontent.com/111031708/214248732-4510f2af-d259-457c-ac59-de2b4b51e709.png">
 
 
 ### New post 
 
-
-<img width="1382" alt="Screenshot 2023-01-24 at 12 48 52 AM" src="https://user-images.githubusercontent.com/111031708/214249032-45489bf8-a03e-48a0-8179-4a6f7f051f33.png">
-
-### Dashboard
-
-<img width="1381" alt="Screenshot 2023-01-24 at 12 49 28 AM" src="https://user-images.githubusercontent.com/111031708/214249130-ab852401-2c58-46d5-91cf-0ed12cbfe0cd.png">
-
-
-### Comments
+![Screenshot 2023-04-23 at 10 14 22 PM](https://user-images.githubusercontent.com/111031708/233907556-46a6be67-abbb-4caa-9915-84da9e0d1974.png)
 
 
 
-![Screenshot 2023-01-24 at 12 58 31 AM](https://user-images.githubusercontent.com/111031708/214250351-f8ef70e3-b1fd-49e1-9fdf-527a33c7f784.png)
+
+
 
 
 
